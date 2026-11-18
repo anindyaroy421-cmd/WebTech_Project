@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seller Registration - MiniShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <header>
+    <b>MiniShop</b>
+
+    <nav>
+      <a href="index.html">Home / Customer</a>
+      <a href="seller.html" class="on">Seller</a>
+      <a href="delivery.html">Delivery</a>
+      <a href="subscribe.html">Subscribe</a>
+    </nav>
+
+    <span>Cart: <b id="cart">0</b></span>
+  </header>
+
+  <main>
+
+    <!-- PICTURE -->
+    <img src="https://m.media-amazon.com/images/G/31/amazonservices/Becoming_an_online_seller.jpg"
+         alt="Becoming an online seller">
+
+    <!-- FORM (one div for each line) -->
+    <h3>Register your shop</h3>
+
+    <form>
+
+      <div class="row">
+        <label for="shop">Shop name</label>
+        <input id="shop" name="shop" required>
+      </div>
+
+      <div class="row">
+        <label for="owner">Owner name</label>
+        <input id="owner" name="owner" required>
+      </div>
+
+      <div class="row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="row">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" required placeholder="01XXXXXXXXX">
+      </div>
+
+      <div class="row">
+        <label for="city">City</label>
+        <input id="city" name="city" required>
+      </div>
+
+      <div class="row">
+        <label for="website">Website (optional)</label>
+        <input id="website" name="website" type="url" placeholder="https://">
+      </div>
+
+      <div class="row">
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option>Fashion</option>
+          <option>Electronics</option>
+          <option>Books</option>
+          <option>Home</option>
+        </select>
+      </div>
+
+      <div class="row top">
+        <label for="about">About your shop</label>
+        <textarea id="about" name="about" required></textarea>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" name="terms" required>
+        I agree to the seller terms
+      </label>
+
+      <div class="actions">
+        <button type="submit">Register</button>
+        <p id="msg"></p>
+      </div>
+
+    </form>
+
+    <!-- QUESTIONS (click to open) -->
+    <h3>Seller questions</h3>
+
+    <details>
+      <summary><b>Who can register?</b></summary>
+      <p>Anyone with a valid email and a mobile number.</p>
+    </details>
+
+    <details>
+      <summary><b>Does it cost anything?</b></summary>
+      <p>No. Registration is free in this demo.</p>
+    </details>
+
+    <details>
+      <summary><b>Where is my data saved?</b></summary>
+      <p>Only in your browser, on this device.</p>
+    </details>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
