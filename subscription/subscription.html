@@ -1,0 +1,78 @@
+<div id="subscription" class="page" hidden>
+  <section class="container section">
+    <h2 class="section-title">Subscription</h2>
+    <p class="sub-tagline">Choose your subscription plan</p>
+
+    <form id="subscription-form" class="sub-card" novalidate>
+      <label for="subName">Full Name</label>
+      <input type="text" id="subName" name="subName" placeholder="Enter your full name" />
+      <small id="subNameError" class="error"></small>
+
+      <label for="subEmail">Email Address</label>
+      <input type="email" id="subEmail" name="subEmail" placeholder="you@example.com" />
+      <small id="subEmailError" class="error"></small>
+
+      <label for="subPlan">Plan Type</label>
+      <select id="subPlan" name="subPlan">
+        <option value="Monthly">Monthly</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Yearly">Yearly</option>
+      </select>
+
+      <label for="subPayment">Payment Method</label>
+      <select id="subPayment" name="subPayment">
+        <option value="bKash">bKash</option>
+        <option value="Nagad">Nagad</option>
+        <option value="Card">Card</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary">Subscribe Now</button>
+    </form>
+
+    <div class="sub-list">
+      <h3 class="sub-list-title">
+        Subscriber List
+        <span id="subscriberCount" class="sub-count">4</span>
+      </h3>
+
+      <div class="sub-table-wrap">
+        <table class="sub-table">
+          <thead>
+            <tr>
+              <th>Serial</th>
+              <th>Subscriber Name</th>
+              <th>Email</th>
+              <th>Plan Type</th>
+            </tr>
+          </thead>
+          <tbody id="subscriberBody">
+            <tr>
+              <td>01</td>
+              <td>Ratul</td>
+              <td>ratul55@gmail.com</td>
+              <td><span class="plan-badge monthly">Monthly</span></td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Saikat</td>
+              <td>saikat11@gmail.com</td>
+              <td><span class="plan-badge yearly">Yearly</span></td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Shihab</td>
+              <td>shihab54@gmail.com</td>
+              <td><span class="plan-badge quarterly">Quarterly</span></td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>Anindya</td>
+              <td>anindya34@gmail.com</td>
+              <td><span class="plan-badge monthly">Monthly</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>

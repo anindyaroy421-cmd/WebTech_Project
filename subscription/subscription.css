@@ -1,0 +1,129 @@
+#subscription .sub-tagline {
+  text-align: center;
+  color: #444;
+  margin: -10px 0 20px;
+  font-style: italic;
+}
+
+#subscription .sub-card {
+  background-color: white;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #bbdefb;
+}
+
+#subscription .sub-card label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #1565c0;
+}
+
+#subscription .sub-card input,
+#subscription .sub-card select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #90caf9;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+}
+
+#subscription .sub-card input:focus,
+#subscription .sub-card select:focus {
+  outline: 2px solid #1565c0;
+  outline-offset: 1px;
+}
+
+#subscription .sub-card input.invalid {
+  border-color: #c62828;
+}
+
+#subscription .sub-card .error {
+  display: block;
+  min-height: 16px;
+}
+
+#subscription .sub-list {
+  max-width: 800px;
+  margin: 30px auto 0;
+}
+
+#subscription .sub-list-title {
+  color: #1565c0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#subscription .sub-count {
+  background-color: #bbdefb;
+  color: #0d47a1;
+  font-size: 13px;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+#subscription .sub-table-wrap {
+  overflow-x: auto;
+  background-color: white;
+  border: 1px solid #bbdefb;
+  border-radius: 8px;
+}
+
+#subscription .sub-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+#subscription .sub-table th {
+  background-color: #1565c0;
+  color: white;
+  text-align: left;
+}
+
+#subscription .sub-table th,
+#subscription .sub-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e3f2fd;
+}
+
+#subscription .sub-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#subscription .sub-table tbody tr:hover {
+  background-color: #f2f7ff;
+}
+
+#subscription .sub-table tr.new-row {
+  background-color: #dcfce7;
+}
+
+#subscription .plan-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#subscription .plan-badge.monthly {
+  background-color: #dbeafe;
+  color: #1565c0;
+}
+
+#subscription .plan-badge.quarterly {
+  background-color: #fef3c7;
+  color: #8a5a00;
+}
+
+#subscription .plan-badge.yearly {
+  background-color: #dcfce7;
+  color: #1b5e20;
+}
