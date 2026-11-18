@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery </title>
+    <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+
+    
+    <div class="header-section">
+        <h1 id="page-title">Welcome To Delivery Page</h1>
+        <p class="subtitle">Join as Delivery Partner</p>
+    </div>
+
+    <form id="delivery-form" action="" method="get">
+        <table class="form-table">
+
+            <tr>
+                <td><label for="name">Full Name</label></td>
+                <td>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <span id="nameError" class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Phone">Phone</label></td>
+                <td>
+                    <input type="text" id="Phone" name="Phone" placeholder="Enter your number">
+                    <span id="phoneError" class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="vehicle">Vehicle</label></td>
+                <td>
+                    <select id="vehicle" name="vehicle">
+                        <option value="">Select Vehicle</option>
+                        <option value="Bicycle">Bicycle</option>
+                        <option value="Bike">Bike</option>
+                        <option value="Walking">Walking</option>
+                        <option value="Drone">Drone</option>
+                        <option value="Robot">Robot</option>
+                    </select>
+                    <span id="vehicleError" class="error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="address">City/Area</label></td>
+                <td>
+                    <textarea id="address" name="address" placeholder="Enter your Address"></textarea>
+                    <span id="cityError" class="error"></span>
+                </td>
+            </tr>
+                        <!-- Work Availability -->
+            <tr>
+                <td><label>Work Availability</label></td>
+                <td>
+                    <label class="option-box">
+                        <input type="radio" name="availability" value="Part Time"> Part Time
+                    </label>
+                    <label class="option-box">
+                        <input type="radio" name="availability" value="Full Time"> Full Time
+                    </label>
+                    <label class="option-box">
+                        <input type="radio" name="availability" value="Flexible"> Flexible
+                    </label>
+                </td>
+            </tr>
+
+            <!-- Delivery Experience -->
+            <tr>
+                <td><label>Delivery Experience</label></td>
+                <td>
+                    <label class="option-box">
+                        <input type="radio" name="experience" value="Fresher"> Fresher
+                    </label>
+                    <br>
+                    <label class="option-box">
+                        <input type="radio" name="experience" value="1-2 Years"> 1–2 Years
+                    </label>
+                    <br>
+                    <label class="option-box">
+                        <input type="radio" name="experience" value="3-5 Years"> 3–5 Years
+                    </label>
+                    <br>
+                    <label class="option-box">
+                        <input type="radio" name="experience" value="5+ Years"> 5+ Years
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <div class="gender-options">
+                        <label><input type="checkbox" name="gender" value="Male"> Male</label>
+                        <label><input type="checkbox" name="gender" value="Female"> Female</label>
+                        <label><input type="checkbox" name="gender" value="Others"> Others</label>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label class="confirm">
+                        <input type="checkbox" id="confirm">
+                        I have filled up the form correctly.
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button class="register-btn" type="submit">Register</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+       <div class="dashboard">
+
+        <h2 class="dash-title">Admin Dashboard</h2>
+        <p class="dash-sub">Manage deliveries, businesses, and system configuration</p>
+
+        <div class="dash-cards">
+
+            <div class="dash-card active">
+                <div class="card-top">
+                    <span>Active</span>
+                    <span class="icon blue"></span>
+                </div>
+                <h3>8</h3>
+                <p>In progress dispatched</p>
+            </div>
+
+            <div class="dash-card completed">
+                <div class="card-top">
+                    <span>Completed</span>
+                    <span class="icon green"></span>
+                </div>
+                <h3>180</h3>
+                <p>Successfully delivered</p>
+            </div>
+
+            <div class="dash-card pending">
+                <div class="card-top">
+                    <span>Pending</span>
+                    <span class="icon orange"></span>
+                </div>
+                <h3>8</h3>
+                <p>Awaiting dispatch</p>
+            </div>
+
+            <div class="dash-card revenue">
+                <div class="card-top">
+                    <span>Revenue</span>
+                    <span class="icon purple">$</span>
+                </div>
+                <h3>$1373</h3>
+                <p>Last 7 days</p>
+            </div>
+
+            <div class="dash-card failed">
+                <div class="card-top">
+                    <span>Failed</span>
+                    <span class="icon red"></span>
+                </div>
+                <h3>0</h3>
+                <p>0 failed deliveries</p>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="delivery.js"></script>
+
+</body>
+</html>
