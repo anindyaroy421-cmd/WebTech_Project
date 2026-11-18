@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniShop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#" class="logo" data-page="home">Mini<span>Shop</span></a>
+
+        <nav id="navLinks" class="nav-links">
+          <a href="#" data-page="home" class="active">Home</a>
+          <a href="#" data-page="customer">Customer</a>
+          <a href="#" >Seller</a>
+          <a href="#" >Delivery</a>
+          <a href="#" >Subscriber</a>
+        </nav>
+
+        <input type="search" id="searchInput" placeholder="Search products..." />
+        <button id="cartBtn" class="cart-btn">🛒 <span id="cartCount">0</span></button>
+        <button id="menuToggle" class="menu-toggle">☰</button>
+      </div>
+    </header>
+
+    <main>
+   
+      <div id="home" class="page">
+        <section class="first">
+          <h1>Welcome to our Shop</h1>
+          <p>This is a dummy Shop!</p>
+          <button id="startShopping" class="btn btn-light">Start Shopping</button>
+        </section>
+
+        <section id="products" class="container section">
+          <h2 class="section-title">Products</h2>
+
+          <div class="product-grid">
+            <div class="product-card">
+              <div class="product-icon">🎧</div>
+              <h3>Wireless Headphones</h3>
+              <p>Category: Electronics</p>
+              <p class="price">Price: $47.99</p>
+              <p>Discount: 20%</p>
+              <p>Bluetooth over-ear headphones with deep bass and 30-hour battery.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">⌚</div>
+              <h3>Smart Watch</h3>
+              <p>Category: Electronics</p>
+              <p class="price">Price: $89.00</p>
+              <p>Discount: 0%</p>
+              <p>Track steps, heart rate and notifications from your wrist.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">📱</div>
+              <h3>Smartphone</h3>
+              <p>Category: Electronics</p>
+              <p class="price">Price: $299.00</p>
+              <p>Discount: 15%</p>
+              <p>6.5-inch display, fast processor and a great camera.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">⌨️</div>
+              <h3>Keyboard</h3>
+              <p>Category: Electronics</p>
+              <p class="price">Price: $25.50</p>
+              <p>Discount: 0%</p>
+              <p>Quiet mechanical-feel keyboard for work and gaming.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">👕</div>
+              <h3>T-Shirt</h3>
+              <p>Category: Fashion</p>
+              <p class="price">Price: $12.00</p>
+              <p>Discount: 10%</p>
+              <p>Soft 100% cotton t-shirt in a comfortable fit.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">🎒</div>
+              <h3>Backpack</h3>
+              <p>Category: Fashion</p>
+              <p class="price">Price: $35.00</p>
+              <p>Discount: 0%</p>
+              <p>Water-resistant backpack with a laptop compartment.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">👟</div>
+              <h3>Sports Shoes</h3>
+              <p>Category: Sports</p>
+              <p class="price">Price: $55.00</p>
+              <p>Discount: 25%</p>
+              <p>Lightweight running shoes with great grip and cushioning.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">🧘</div>
+              <h3>Yoga Mat</h3>
+              <p>Category: Sports</p>
+              <p class="price">Price: $18.00</p>
+              <p>Discount: 0%</p>
+              <p>Non-slip, extra-thick mat for yoga and home workouts.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">📓</div>
+              <h3>Notebook</h3>
+              <p>Category: Books</p>
+              <p class="price">Price: $4.50</p>
+              <p>Discount: 0%</p>
+              <p>200-page ruled notebook with a hard cover.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">📖</div>
+              <h3>Bestseller Novel</h3>
+              <p>Category: Books</p>
+              <p class="price">Price: $9.99</p>
+              <p>Discount: 30%</p>
+              <p>A gripping story that readers cannot put down.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">💡</div>
+              <h3>Table Lamp</h3>
+              <p>Category: Home &amp; Living</p>
+              <p class="price">Price: $22.00</p>
+              <p>Discount: 0%</p>
+              <p>Modern LED lamp with adjustable brightness.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon">🧴</div>
+              <h3>Face Cream</h3>
+              <p>Category: Beauty &amp; Health</p>
+              <p class="price">Price: $14.50</p>
+              <p>Discount: 10%</p>
+              <p>Daily moisturizing cream suitable for all skin types.</p>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <p id="noResults" class="no-results" hidden>
+            No products match your search. Try another word.
+          </p>
+        </section>
+
+        <section class="container section">
+          <div class="offer">
+            <div>
+              <h2>Up to 50% OFF on Selected Items</h2>
+              <p>Limited time deals on your favourite products.</p>
+            </div>
+            <button id="shopNow" class="btn btn-light">Shop Now</button>
+          </div>
+        </section>
+      </div>
+
+      
+      <div id="customer" class="page" hidden>
+        <section class="container section">
+          <h2 class="section-title">Customer Registration</h2>
+          <form class="form-card" novalidate>
+            <label>Full Name</label>
+            <input type="text" name="full_name" placeholder="Your full name" />
+            <small class="error"></small>
+
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="you@example.com" />
+            <small class="error"></small>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="At least 6 characters" />
+            <small class="error"></small>
+
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password" placeholder="Repeat password" />
+            <small class="error"></small>
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="e.g. 01712345678" />
+            <small class="error"></small>
+
+            <label>Address</label>
+            <textarea name="address" rows="3" placeholder="Your address"></textarea>
+            <small class="error"></small>
+
+            <button type="submit" class="btn btn-primary">Register as Customer</button>
+          </form>
+        </section>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <a href="#" class="logo" data-page="home">Mini<span>Shop</span></a>
+          <p>Shop smarter, live better.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="info-link">About Us</a>
+          <a href="#" class="info-link">Contact Us</a>
+          <a href="#" class="info-link">Privacy Policy</a>
+          <a href="#" class="info-link">Terms and Conditions</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 MiniShop. This is not a proper shop.</p>
+    </footer>
+
+    <div id="message" class="message"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
